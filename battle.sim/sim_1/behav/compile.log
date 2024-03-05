@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/PLD/program_v090/lab2_6/VGA_ctler/VGA_ctler.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_3.v" into library blk_mem_gen_v8_3_4
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_3
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_3
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_4_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_4_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_4_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/PLD/program_v090/lab2_6/VGA_ctler/VGA_ctler.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/PLD/program_v090/lab2_6/VGA_ctler/VGA_ctler.srcs/sources_1/imports/VGA_ctler/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/PLD/program_v090/lab2_6/VGA_ctler/VGA_ctler.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_bsprite
+ERROR: [VRFC 10-91] RED is not declared [C:/Users/ASUS/Desktop/PLD/program_v090/lab2_6/VGA_ctler/VGA_ctler.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:42]
+ERROR: [VRFC 10-91] RED is not declared [C:/Users/ASUS/Desktop/PLD/program_v090/lab2_6/VGA_ctler/VGA_ctler.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:47]
+ERROR: [VRFC 10-1040] module vga_bsprite ignored due to previous errors [C:/Users/ASUS/Desktop/PLD/program_v090/lab2_6/VGA_ctler/VGA_ctler.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:1]

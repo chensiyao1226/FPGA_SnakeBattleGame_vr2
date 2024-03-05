@@ -1,0 +1,898 @@
+
+*** Running vivado
+    with args -log VGA_ctler.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_ctler.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source VGA_ctler.tcl -notrace
+Command: synth_design -top VGA_ctler -part xc7a35tcpg236-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'blk_mem_gen_1' (customized with software release 2016.3) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12780 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 349.605 ; gain = 83.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VGA_ctler' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/VGA_ctler.v:23]
+INFO: [Synth 8-638] synthesizing module 'vga_bsprite' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:1]
+	Parameter hbp bound to: 10'b0010010000 
+	Parameter vbp bound to: 10'b0000011111 
+	Parameter W bound to: 18 - type: integer 
+	Parameter Wb bound to: 100 - type: integer 
+	Parameter H bound to: 18 - type: integer 
+	Parameter Hb bound to: 50 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:277]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:417]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:442]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:618]
+WARNING: [Synth 8-3848] Net rom_addr in module/entity vga_bsprite does not have driver. [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:10]
+INFO: [Synth 8-256] done synthesizing module 'vga_bsprite' (1#1) [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:1]
+INFO: [Synth 8-638] synthesizing module 'vga_core' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_core.v:1]
+	Parameter DLY bound to: 1 - type: integer 
+	Parameter hpixles bound to: 10'b1100100000 
+	Parameter vrows bound to: 10'b1000010001 
+	Parameter hbp bound to: 10'b0010010000 
+	Parameter hfp bound to: 10'b1100010000 
+	Parameter vbp bound to: 10'b0000011111 
+	Parameter vfp bound to: 10'b0111111111 
+INFO: [Synth 8-256] done synthesizing module 'vga_core' (2#1) [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_core.v:1]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/clk_div.v:1]
+	Parameter DLY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (3#1) [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/clk_div.v:1]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/.Xil/Vivado-7648-DESKTOP-PAAAK8M/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (4#1) [C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/.Xil/Vivado-7648-DESKTOP-PAAAK8M/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'LED' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v:22]
+	Parameter update_interval bound to: 24999 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v:86]
+INFO: [Synth 8-256] done synthesizing module 'LED' (5#1) [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v:22]
+WARNING: [Synth 8-689] width (7) of port connection 'seg' does not match port width (8) of module 'LED' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/VGA_ctler.v:88]
+INFO: [Synth 8-256] done synthesizing module 'VGA_ctler' (6#1) [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/VGA_ctler.v:23]
+WARNING: [Synth 8-3331] design LED has unconnected port clr_n
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[15]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[14]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[13]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[12]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[11]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[10]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[9]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[8]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[7]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[6]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[5]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[4]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[3]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[2]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[1]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[0]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[11]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[10]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[9]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[8]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[7]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[6]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[5]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[4]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[3]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[2]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[1]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[0]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[7]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[6]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[5]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[4]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[3]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[2]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[1]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 430.828 ; gain = 164.691
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 430.828 ; gain = 164.691
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/.Xil/Vivado-7648-DESKTOP-PAAAK8M/dcp3/blk_mem_gen_1_in_context.xdc] for cell 'u_blk_mem_gen_1'
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/.Xil/Vivado-7648-DESKTOP-PAAAK8M/dcp3/blk_mem_gen_1_in_context.xdc] for cell 'u_blk_mem_gen_1'
+Parsing XDC File [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/constrs_1/new/TOP.xdc]
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/constrs_1/new/TOP.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/constrs_1/new/TOP.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_ctler_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_ctler_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 748.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 748.625 ; gain = 482.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 748.625 ; gain = 482.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_blk_mem_gen_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 748.625 ; gain = 482.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'dx_reg[4][5:0]' into 'dx_reg[2][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+INFO: [Synth 8-4471] merging register 'dx_reg[5][5:0]' into 'dx_reg[1][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+INFO: [Synth 8-4471] merging register 'dx_reg[6][5:0]' into 'dx_reg[0][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+INFO: [Synth 8-4471] merging register 'dx_reg[7][5:0]' into 'dx_reg[1][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+INFO: [Synth 8-4471] merging register 'dx_reg[8][5:0]' into 'dx_reg[2][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+INFO: [Synth 8-4471] merging register 'dx_reg[9][5:0]' into 'dx_reg[3][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+INFO: [Synth 8-4471] merging register 'dx_reg[10][5:0]' into 'dx_reg[2][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+INFO: [Synth 8-4471] merging register 'dx_reg[11][5:0]' into 'dx_reg[1][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+INFO: [Synth 8-4471] merging register 'dy_reg[0][5:0]' into 'dx_reg[3][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[1][5:0]' into 'dx_reg[2][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[2][5:0]' into 'dx_reg[1][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[3][5:0]' into 'dx_reg[0][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[4][5:0]' into 'dx_reg[1][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[5][5:0]' into 'dx_reg[2][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[6][5:0]' into 'dx_reg[3][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[7][5:0]' into 'dx_reg[2][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[8][5:0]' into 'dx_reg[1][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[9][5:0]' into 'dx_reg[0][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[10][5:0]' into 'dx_reg[1][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'dy_reg[11][5:0]' into 'dx_reg[2][5:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+INFO: [Synth 8-4471] merging register 'blkx_reg[4][9:0]' into 'blkx_reg[0][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:157]
+INFO: [Synth 8-4471] merging register 'blky_reg[0][9:0]' into 'blkx_reg[2][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:164]
+INFO: [Synth 8-4471] merging register 'blky_reg[1][9:0]' into 'blkx_reg[1][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:164]
+INFO: [Synth 8-4471] merging register 'blky_reg[2][9:0]' into 'blkx_reg[0][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:164]
+INFO: [Synth 8-4471] merging register 'bonx_reg[1][9:0]' into 'blkx_reg[1][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+INFO: [Synth 8-4471] merging register 'bonx_reg[5][9:0]' into 'blkx_reg[2][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+INFO: [Synth 8-4471] merging register 'bonx_reg[6][9:0]' into 'blky_reg[3][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+INFO: [Synth 8-4471] merging register 'bonx_reg[9][9:0]' into 'blkx_reg[3][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+INFO: [Synth 8-4471] merging register 'bonx_reg[16][9:0]' into 'bonx_reg[0][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+INFO: [Synth 8-4471] merging register 'bonx_reg[17][9:0]' into 'blkx_reg[1][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+INFO: [Synth 8-4471] merging register 'bonx_reg[18][9:0]' into 'bonx_reg[2][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+INFO: [Synth 8-4471] merging register 'bonx_reg[19][9:0]' into 'bonx_reg[3][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+INFO: [Synth 8-4471] merging register 'bonx_reg[21][9:0]' into 'blky_reg[4][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+INFO: [Synth 8-4471] merging register 'bony_reg[1][9:0]' into 'bony_reg[0][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[2][9:0]' into 'bonx_reg[8][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[3][9:0]' into 'bonx_reg[10][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[5][9:0]' into 'bony_reg[4][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[6][9:0]' into 'bonx_reg[4][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[7][9:0]' into 'blky_reg[3][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[9][9:0]' into 'bony_reg[8][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[10][9:0]' into 'bonx_reg[0][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[11][9:0]' into 'bonx_reg[2][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[13][9:0]' into 'bony_reg[12][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[15][9:0]' into 'blkx_reg[2][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[17][9:0]' into 'bony_reg[16][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[19][9:0]' into 'blkx_reg[0][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[21][9:0]' into 'bony_reg[20][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-4471] merging register 'bony_reg[24][9:0]' into 'bony_reg[23][9:0]' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element dx_reg[4] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+WARNING: [Synth 8-6014] Unused sequential element dx_reg[5] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+WARNING: [Synth 8-6014] Unused sequential element dx_reg[6] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+WARNING: [Synth 8-6014] Unused sequential element dx_reg[7] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+WARNING: [Synth 8-6014] Unused sequential element dx_reg[8] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+WARNING: [Synth 8-6014] Unused sequential element dx_reg[9] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+WARNING: [Synth 8-6014] Unused sequential element dx_reg[10] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+WARNING: [Synth 8-6014] Unused sequential element dx_reg[11] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:131]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[0] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[1] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[2] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[3] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[4] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[5] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[6] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[7] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[8] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[9] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[10] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element dy_reg[11] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:144]
+WARNING: [Synth 8-6014] Unused sequential element blkx_reg[4] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:157]
+WARNING: [Synth 8-6014] Unused sequential element blky_reg[0] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:164]
+WARNING: [Synth 8-6014] Unused sequential element blky_reg[1] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:164]
+WARNING: [Synth 8-6014] Unused sequential element blky_reg[2] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:164]
+WARNING: [Synth 8-6014] Unused sequential element bonx_reg[1] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+WARNING: [Synth 8-6014] Unused sequential element bonx_reg[5] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+WARNING: [Synth 8-6014] Unused sequential element bonx_reg[6] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+WARNING: [Synth 8-6014] Unused sequential element bonx_reg[9] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+WARNING: [Synth 8-6014] Unused sequential element bonx_reg[16] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+WARNING: [Synth 8-6014] Unused sequential element bonx_reg[17] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+WARNING: [Synth 8-6014] Unused sequential element bonx_reg[18] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+WARNING: [Synth 8-6014] Unused sequential element bonx_reg[19] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+WARNING: [Synth 8-6014] Unused sequential element bonx_reg[21] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:172]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[1] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[2] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[3] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[5] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[6] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[7] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[9] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[10] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[11] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[13] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[15] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[17] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[19] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[21] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+WARNING: [Synth 8-6014] Unused sequential element bony_reg[24] was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:173]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:363]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:368]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:267]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:626]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:262]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:646]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:426]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:418]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:418]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:443]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:451]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:443]
+INFO: [Synth 8-5544] ROM "l" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "l2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "bon_appear_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[24]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element clkCount_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:83]
+WARNING: [Synth 8-6014] Unused sequential element grade_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:94]
+WARNING: [Synth 8-6014] Unused sequential element grade2_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:95]
+WARNING: [Synth 8-6014] Unused sequential element rand_num1_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:529]
+WARNING: [Synth 8-6014] Unused sequential element rand_num2_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:530]
+WARNING: [Synth 8-6014] Unused sequential element l_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:627]
+WARNING: [Synth 8-6014] Unused sequential element l2_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:647]
+INFO: [Synth 8-5544] ROM "l" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "l2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "bon_appear_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bon_appear_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dir" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dir2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grade_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grade_up2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "appy" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RED" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyy" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyy" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyx2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyx2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyx2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyx2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyy2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bodyy2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bon_id" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "vs_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "clk_div4" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "selcnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cursel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "seg_r" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'seg_r_reg' [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v:46]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 748.625 ; gain = 482.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 84    
+	   2 Input     11 Bit       Adders := 74    
+	   2 Input     10 Bit       Adders := 133   
+	   3 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 10    
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 123   
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 54    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 7     
+	   3 Input     10 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 86    
+	   4 Input      6 Bit        Muxes := 16    
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	  12 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 309   
+	   5 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_bsprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 84    
+	   2 Input     11 Bit       Adders := 74    
+	   2 Input     10 Bit       Adders := 131   
+	   3 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 10    
+	   2 Input      5 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 121   
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 6     
+	                1 Bit    Registers := 51    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 7     
+	   3 Input     10 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 86    
+	   4 Input      6 Bit        Muxes := 16    
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	  12 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 306   
+	   5 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+Module vga_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module LED 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element rand_num1_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:529]
+WARNING: [Synth 8-6014] Unused sequential element rand_num2_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:530]
+WARNING: [Synth 8-6014] Unused sequential element l_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:627]
+WARNING: [Synth 8-6014] Unused sequential element l2_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:647]
+WARNING: [Synth 8-6014] Unused sequential element grade_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:94]
+WARNING: [Synth 8-6014] Unused sequential element grade2_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:95]
+WARNING: [Synth 8-6014] Unused sequential element clkCount_reg was removed.  [C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/imports/VGA_ctler/vga_bsprite.v:83]
+INFO: [Synth 8-5546] ROM "u_vga_core/vs_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "LED/selcnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "LED/cursel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[15]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[14]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[13]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[12]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[11]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[10]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[9]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[8]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[7]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[6]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[5]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[4]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[3]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[2]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[1]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port rom_addr[0]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[11]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[10]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[9]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[8]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[7]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[6]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[5]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[4]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[3]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[2]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[1]
+WARNING: [Synth 8-3331] design vga_bsprite has unconnected port data[0]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[7]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[6]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[5]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[4]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[3]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[2]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[1]
+WARNING: [Synth 8-3331] design VGA_ctler has unconnected port sw[0]
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[5][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[5][1]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][0]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[23][0]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[22][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[20][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[15][0]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[14][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[13][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[12][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[11][0]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[3][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[7][0]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[3][0]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[24][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (y_vga_bsprite/\bon_id_reg[5] )
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dir2_reg[3]' (FD) to 'y_vga_bsprite/dir_reg[3]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[3][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[2][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[1][0]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[0][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[3][1]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[2][1]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[1][1]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[0][1]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[3][2]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[2][2]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[1][2]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[0][2]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[3][3]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[2][3]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[1][3]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[0][3]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[3][4]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[2][4]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[1][4]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[0][4]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[3][5]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[2][5]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[1][5]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/dx_reg[0][5]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (y_vga_bsprite/\dir_reg[3] )
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/grade_up2_reg[2]' (FDR) to 'y_vga_bsprite/lc_reg[2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/lc2_reg[2]' (FDR) to 'y_vga_bsprite/lc_reg[2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/grade_up_reg[2]' (FDR) to 'y_vga_bsprite/lc_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (y_vga_bsprite/\lc_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (y_vga_bsprite/\appy_reg[9] )
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[5][2]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[5][3]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[5][8]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[5][6]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[5][5]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[5][4]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[5][7]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[5][9]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[5][9]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[5][8]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[5][7]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[5][5]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[5][3]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[5][2]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[5][1]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[5][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[5][4]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[5][6]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blkx_reg[1][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[4][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[23][1]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][4]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[23][2]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][3]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[23][3]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][5]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[23][8]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][5]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[23][6]' (FDSE) to 'y_vga_bsprite/bonx_reg[23][4]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[23][5]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][7]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[23][4]' (FDSE) to 'y_vga_bsprite/bonx_reg[22][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[23][7]' (FDRE) to 'y_vga_bsprite/bonx_reg[23][9]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[23][9]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bony_reg[22][8]' (FDSE) to 'y_vga_bsprite/bonx_reg[22][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bony_reg[22][7]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bony_reg[22][6]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bony_reg[22][5]' (FDSE) to 'y_vga_bsprite/bonx_reg[22][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bony_reg[22][0]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bony_reg[22][1]' (FDSE) to 'y_vga_bsprite/bonx_reg[22][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bony_reg[22][2]' (FDSE) to 'y_vga_bsprite/bonx_reg[22][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bony_reg[22][3]' (FDSE) to 'y_vga_bsprite/bonx_reg[22][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bony_reg[22][4]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bony_reg[22][9]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[22][9]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[22][8]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[22][6]' (FDSE) to 'y_vga_bsprite/bonx_reg[22][2]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[22][4]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[22][3]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[22][2]' (FDSE) to 'y_vga_bsprite/bonx_reg[22][5]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[22][1]' (FDRE) to 'y_vga_bsprite/bonx_reg[22][7]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[22][5]' (FDSE) to 'y_vga_bsprite/bony_reg[20][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[22][7]' (FDRE) to 'y_vga_bsprite/bony_reg[20][0]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[4][1]' (FDSE) to 'y_vga_bsprite/bony_reg[20][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[4][2]' (FDSE) to 'y_vga_bsprite/bony_reg[20][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[4][3]' (FDRE) to 'y_vga_bsprite/bony_reg[20][0]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[4][8]' (FDRE) to 'y_vga_bsprite/bony_reg[20][0]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[4][6]' (FDRE) to 'y_vga_bsprite/bony_reg[20][0]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[4][5]' (FDRE) to 'y_vga_bsprite/bony_reg[20][0]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[4][4]' (FDSE) to 'y_vga_bsprite/bony_reg[20][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[4][7]' (FDSE) to 'y_vga_bsprite/bony_reg[20][1]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/blky_reg[4][9]' (FDRE) to 'y_vga_bsprite/bony_reg[20][0]'
+INFO: [Synth 8-3886] merging instance 'y_vga_bsprite/bonx_reg[20][1]' (FDRE) to 'y_vga_bsprite/bony_reg[20][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (y_vga_bsprite/\bony_reg[23][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (y_vga_bsprite/\bony_reg[23][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (y_vga_bsprite/\data_out_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (bon_id_reg[5]) is unused and will be removed from module vga_bsprite.
+WARNING: [Synth 8-3332] Sequential element (appy_reg[9]) is unused and will be removed from module vga_bsprite.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[15]) is unused and will be removed from module vga_bsprite.
+WARNING: [Synth 8-3332] Sequential element (dir_reg[3]) is unused and will be removed from module vga_bsprite.
+WARNING: [Synth 8-3332] Sequential element (lc_reg[2]) is unused and will be removed from module vga_bsprite.
+WARNING: [Synth 8-3332] Sequential element (bony_reg[23][4]) is unused and will be removed from module vga_bsprite.
+WARNING: [Synth 8-3332] Sequential element (bony_reg[23][9]) is unused and will be removed from module vga_bsprite.
+WARNING: [Synth 8-3332] Sequential element (LED/seg_r_reg[7]) is unused and will be removed from module VGA_ctler.
+WARNING: [Synth 8-3332] Sequential element (LED/seg_r_reg[6]) is unused and will be removed from module VGA_ctler.
+WARNING: [Synth 8-3332] Sequential element (LED/seg_r_reg[5]) is unused and will be removed from module VGA_ctler.
+WARNING: [Synth 8-3332] Sequential element (LED/seg_r_reg[4]) is unused and will be removed from module VGA_ctler.
+WARNING: [Synth 8-3332] Sequential element (LED/seg_r_reg[3]) is unused and will be removed from module VGA_ctler.
+WARNING: [Synth 8-3332] Sequential element (LED/seg_r_reg[2]) is unused and will be removed from module VGA_ctler.
+WARNING: [Synth 8-3332] Sequential element (LED/seg_r_reg[1]) is unused and will be removed from module VGA_ctler.
+WARNING: [Synth 8-3332] Sequential element (LED/seg_r_reg[0]) is unused and will be removed from module VGA_ctler.
+WARNING: [Synth 8-3332] Sequential element (u_clk_div/clk_cnt_reg[1]) is unused and will be removed from module VGA_ctler.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 748.625 ; gain = 482.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 806.195 ; gain = 540.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 809.906 ; gain = 543.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 868.656 ; gain = 602.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 868.656 ; gain = 602.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 868.656 ; gain = 602.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 868.656 ; gain = 602.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 868.656 ; gain = 602.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 868.656 ; gain = 602.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 868.656 ; gain = 602.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_1 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_1 |     1|
+|2     |BUFG          |     3|
+|3     |CARRY4        |   715|
+|4     |LUT1          |   201|
+|5     |LUT2          |  1994|
+|6     |LUT3          |   148|
+|7     |LUT4          |  1049|
+|8     |LUT5          |   449|
+|9     |LUT6          |   488|
+|10    |MUXF7         |     3|
+|11    |FDCE          |    57|
+|12    |FDPE          |     1|
+|13    |FDRE          |   992|
+|14    |FDSE          |    79|
+|15    |IBUF          |     7|
+|16    |OBUF          |    25|
++------+--------------+------+
+
+Report Instance Areas: 
++------+----------------+------------+------+
+|      |Instance        |Module      |Cells |
++------+----------------+------------+------+
+|1     |top             |            |  6223|
+|2     |  LED           |LED         |    89|
+|3     |  u_clk_div     |clk_div     |     4|
+|4     |  u_vga_core    |vga_core    |  2719|
+|5     |  y_vga_bsprite |vga_bsprite |  3364|
++------+----------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 868.656 ; gain = 602.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 115 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 868.656 ; gain = 284.723
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 868.656 ; gain = 602.520
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 722 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+352 Infos, 158 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 868.656 ; gain = 607.176
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/VGA_ctler.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 868.656 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 20 17:54:24 2018...

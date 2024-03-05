@@ -1,0 +1,94 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Fri Jul 20 17:55:21 2018
+| Host         : DESKTOP-PAAAK8M running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file VGA_ctler_control_sets_placed.rpt
+| Design       : VGA_ctler
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    28 |
+| Unused register locations in slices containing registers |   114 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              81 |           40 |
+| No           | No                    | Yes                    |              30 |           13 |
+| No           | Yes                   | No                     |              90 |           34 |
+| Yes          | No                    | No                     |              41 |           19 |
+| Yes          | No                    | Yes                    |              28 |           13 |
+| Yes          | Yes                   | No                     |             864 |          343 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------+-------------------------------------+------------------+----------------+
+|  Clock Signal  |            Enable Signal           |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------+------------------------------------+-------------------------------------+------------------+----------------+
+|  clk_25m_BUFG  |                                    | y_vga_bsprite/grade_up20            |                1 |              1 |
+|  clk_25m_BUFG  |                                    | y_vga_bsprite/grade_up0             |                1 |              1 |
+|  clk_25m_BUFG  |                                    | y_vga_bsprite/lc2[0]_i_1_n_0        |                1 |              1 |
+|  clk_25m_BUFG  |                                    | y_vga_bsprite/p_1_out[0]            |                1 |              1 |
+|  clk_IBUF_BUFG |                                    | y_vga_bsprite/SR[0]                 |                1 |              2 |
+|  Bclk          |                                    |                                     |                4 |              4 |
+|  clk_25m_BUFG  |                                    | y_vga_bsprite/RED1591_out           |                2 |              4 |
+|  clk_25m_BUFG  | y_vga_bsprite/l2                   |                                     |                2 |              5 |
+|  clk_25m_BUFG  | y_vga_bsprite/l                    |                                     |                2 |              5 |
+|  clk_25m_BUFG  | u_vga_core/E[0]                    | u_vga_core/SR[0]                    |                3 |              5 |
+|  Bclk          | y_vga_bsprite/bodyx                |                                     |                3 |              6 |
+|  Bclk          | y_vga_bsprite/bodyx2               |                                     |                2 |              6 |
+|  Bclk          | y_vga_bsprite/bodyx2[1][9]_i_1_n_0 | y_vga_bsprite/SR[0]                 |                4 |             10 |
+|  Bclk          | y_vga_bsprite/bodyx[1][6]_i_1_n_0  | y_vga_bsprite/SR[0]                 |                5 |             10 |
+|  clk_25m_BUFG  | y_vga_bsprite/apprefresh           |                                     |               10 |             19 |
+|  clk_25m_BUFG  | y_vga_bsprite/apprefresh           | y_vga_bsprite/SR[0]                 |                5 |             19 |
+|  Bclk          | y_vga_bsprite/bodyx                | y_vga_bsprite/SR[0]                 |                6 |             20 |
+|  Bclk          | y_vga_bsprite/bodyx2               | y_vga_bsprite/SR[0]                 |                6 |             20 |
+|  clk_25m_BUFG  |                                    | y_vga_bsprite/bon_appear[0]_i_1_n_0 |               13 |             25 |
+|  clk_25m_BUFG  |                                    | y_vga_bsprite/clkCount[0]_i_1_n_0   |                7 |             26 |
+|  clk_25m_BUFG  |                                    | y_vga_bsprite/SR[0]                 |               12 |             28 |
+|  clk_25m_BUFG  | u_vga_core/vs_en                   | y_vga_bsprite/SR[0]                 |               13 |             28 |
+|  Bclk          | y_vga_bsprite/start                | y_vga_bsprite/bodyx2[1][8]_i_1_n_0  |               13 |             30 |
+|  Bclk          | y_vga_bsprite/start                | y_vga_bsprite/bodyx[1][9]_i_1_n_0   |               13 |             30 |
+|  clk_25m_BUFG  |                                    | LED/selcnt[31]_i_1_n_0              |                8 |             31 |
+|  clk_25m_BUFG  |                                    |                                     |               36 |             77 |
+|  Bclk          | y_vga_bsprite/bodyx[3][9]_i_2_n_0  | y_vga_bsprite/bodyy2[3][9]_i_1_n_0  |              141 |            360 |
+|  Bclk          | y_vga_bsprite/bodyx[3][9]_i_2_n_0  | y_vga_bsprite/bodyx[3][9]_i_1_n_0   |              147 |            360 |
++----------------+------------------------------------+-------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 2      |                     1 |
+| 4      |                     2 |
+| 5      |                     3 |
+| 6      |                     2 |
+| 10     |                     2 |
+| 16+    |                    14 |
++--------+-----------------------+
+
+

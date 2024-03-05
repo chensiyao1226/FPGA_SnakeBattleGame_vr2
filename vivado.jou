@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Jul 21 15:41:55 2018
+# Process ID: 6260
+# Current directory: C:/Users/ASUS/Desktop/PLD/battle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5004 C:\Users\ASUS\Desktop\PLD\battle\battle.xpr
+# Log file: C:/Users/ASUS/Desktop/PLD/battle/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/PLD/battle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/PLD/battle/battle.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+close_design
+open_run synth_1 -name synth_1

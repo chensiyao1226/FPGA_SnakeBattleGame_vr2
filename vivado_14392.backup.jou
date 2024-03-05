@@ -1,0 +1,399 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Jul 20 13:39:30 2018
+# Process ID: 14392
+# Current directory: C:/Users/ASUS/Desktop/PLD/battle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2996 C:\Users\ASUS\Desktop\PLD\battle\battle.xpr
+# Log file: C:/Users/ASUS/Desktop/PLD/battle/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/PLD/battle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/PLD/battle/battle.xpr
+update_compile_order -fileset sources_1
+update_files -from_files C:/Users/ASUS/Desktop/PLD/program_v090/lab2_6/VGA_ctler/VGA_ctler.srcs/test_240_160.coe -to_files c:/Users/HenryRain/Desktop/test_240_160.coe -filesets [get_filesets *]
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close [ open C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v w ]
+add_files C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close [ open C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/counter4b.v w ]
+add_files C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/counter4b.v
+update_compile_order -fileset sources_1
+set_property is_enabled true [get_files  C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

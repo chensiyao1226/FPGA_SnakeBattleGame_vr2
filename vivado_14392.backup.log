@@ -1,0 +1,1182 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Jul 20 13:39:30 2018
+# Process ID: 14392
+# Current directory: C:/Users/ASUS/Desktop/PLD/battle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2996 C:\Users\ASUS\Desktop\PLD\battle\battle.xpr
+# Log file: C:/Users/ASUS/Desktop/PLD/battle/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/PLD/battle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/PLD/battle/battle.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'blk_mem_gen_1' (customized with software release 2016.3) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 715.184 ; gain = 99.598
+update_compile_order -fileset sources_1
+update_files -from_files C:/Users/ASUS/Desktop/PLD/program_v090/lab2_6/VGA_ctler/VGA_ctler.srcs/test_240_160.coe -to_files c:/Users/HenryRain/Desktop/test_240_160.coe -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'c:/Users/HenryRain/Desktop/test_240_160.coe' with file 'C:/Users/ASUS/Desktop/PLD/program_v090/lab2_6/VGA_ctler/VGA_ctler.srcs/test_240_160.coe'.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.1
+  **** Build date : Apr 14 2017-19:11:07
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 13:46:02 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 13:46:02 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 13:52:11 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 13:52:11 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 13:59:56 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 13:59:56 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1
+
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 927.465 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 14:11:51 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 14:11:52 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 930.000 ; gain = 2.535
+close [ open C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v w ]
+add_files C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 14:15:56 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 14:15:56 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 14:17:30 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 14:17:30 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 14:17:53 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 14:17:53 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 14:22:38 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 14:22:38 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 14:33:56 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 14:33:56 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 14:38:29 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 14:38:29 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 14:54:26 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 14:54:26 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 14:58:26 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 14:58:26 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 15:04:36 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 15:04:36 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 15:09:46 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 15:09:46 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 15:19:16 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 15:19:16 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 15:27:39 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 15:27:39 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 15:36:00 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 15:36:00 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 15:39:24 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 15:39:24 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 15:45:19 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 15:45:19 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 15:51:49 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 15:51:49 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 15:58:19 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 15:58:19 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 15:59:09 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 15:59:09 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+close [ open C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/counter4b.v w ]
+add_files C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/counter4b.v
+update_compile_order -fileset sources_1
+set_property is_enabled true [get_files  C:/Users/ASUS/Desktop/PLD/battle/battle.srcs/sources_1/new/LED.v]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:03:34 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 17:03:34 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:05:55 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 17:05:55 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:08:55 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 17:08:55 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:10:11 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 17:10:11 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:13:15 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 17:13:15 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:18:39 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 17:18:39 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:19:31 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 17:19:31 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Jul 20 17:29:01 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:29:12 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 17:29:12 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:31:05 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A37B30A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:39:32 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 17:39:32 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 722 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1141.148 ; gain = 51.027
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A37B30A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 20 17:53:07 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/synth_1/runme.log
+[Fri Jul 20 17:53:07 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/Users/ASUS/Desktop/PLD/battle/battle.runs/impl_1/VGA_ctler.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 20 17:57:27 2018...
